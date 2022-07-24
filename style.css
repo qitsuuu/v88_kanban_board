@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+div.container{
+    max-width: 1020px;
+    margin: 0 auto;
+}
+h1, h2{
+    text-align: center;
+    padding: 10px;
+}
+.container div{
+    height: 100vh;
+    width: 200px;
+    display: inline-block;
+    vertical-align: top;
+}
+    h1{
+        color:rgb(168, 111, 5)
+    }
+
+    h2{
+        border: 1px solid gray;
+    }
+
+    ul{
+        padding: 5px;
+        list-style: none;
+        height: 100vh;
+    }
+    ul li{
+        padding: 10px;
+        background-color: white;
+        border-radius: 5px;
+        margin-bottom: 5px;
+    }
+    #todo{
+        background-color: lightgray;
+    }
+    #inprogress{
+        background-color: lightblue;
+    }
+    #forapp{
+        background-color: lightcyan;
+    }
+    #testing{
+        background-color: rgb(255, 208, 122);
+    }
+    #done{
+        background-color: rgb(189, 255, 189);
+    }
+    

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Kanban Board by Qit</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://yarnpkg.com/en/package/normalize.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+            $(document).ready(()=>{
+                $('ul.sortable').sortable({
+                    connectWith: '.receivingCont'
+                });
+            })
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Qit's Kanban Board</h1>
+            <div id="todo">
+                <h2>To Do</h2>
+                <ul class="sortable receivingCont">
+                    <li>Form Validation</li>
+                    <li>Cool Plugins</li>
+                    <li>SQL</li>
+                    <li>DB Design</li>
+                </ul>
+            </div>
+            <div id="inprogress">
+                <h2>In Progress</h2>
+                <ul class="sortable receivingCont">
+                    <li>JQuery</li>
+                </ul>
+            </div>
+            <div id="forapp">
+                <h2>For Approval</h2>
+                <ul class="sortable receivingCont">
+                    <li>Candy Crush</li>
+                    <li>Matchy Matchy</li>
+                    <li>Fortune Cookies</li>
+                    <li>Mini Doc</li>
+                </ul>
+            </div>
+            <div id="testing">
+                <h2>Testing</h2>
+                <ul class="sortable receivingCont">
+                    <li>Kanban Board</li>
+                </ul>
+            </div>
+            <div id="done">
+                <h2>Done</h2>
+                <ul class="sortable receivingCont">
+                    <li>The Web</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Responsive Design</li>
+                    <li>Git and Github</li>
+                </ul>
+            </div>
+        </div>     
+    </body>
+</html>
+
+
